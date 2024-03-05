@@ -24,4 +24,18 @@ let myDate = new Date()
 // console.log(NewDate .getTime()) // --> "YY-DD-MM" => We are converting timestamp in milliseconds since the Unix epoch (January 1, 1970, 00:00:00 UTC), to compare.
 
 // console.log(myDate .getDay()) // Ouptut => 1 --> Monday
-console.log(myDate .getDate()) // Output => 5 --> 5th March
+// console.log(myDate .getDate()) // Output => 5 --> 5th March
+// console.log(myDate .getFullYear()) // Output => 2024
+// console.log(myDate .getHours()) // Output => 13 --> current hour
+// console.log(myDate .getMinutes()) // Output => 24 --> current minute
+// console.log(myDate .getSeconds()) // Output -> current seconds
+
+// console.log(`${myDate.getMonth() + 1}`); // month index returned by getMonth(), January is represented by 0, so we are adding 1, to start 
+
+console.log(myDate.toLocaleString('default',{
+    weekday: "short" // Output =>  current day (Tuesday) --> "Tue" (short)
+    // weekday: "long" // Output =>  current day (Tuesday) --> "Tuesday" (long)
+    // weekday:"narrow" // Output =>  current day (Tuesday) --> "T" (narrow)
+}))
+
+
