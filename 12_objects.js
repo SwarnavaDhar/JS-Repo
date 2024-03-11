@@ -90,7 +90,7 @@ users[1].email
 // console.log(regularUser.hasOwnProperty('isLoggedIn')) // checks whethet a property present or not and gives a bool value based on that
 
 
-// console.log("*********************************************** Objects Part 3 **************************************************************")
+ 
 
 const course = {
     MyCourse: "JS",
@@ -100,12 +100,14 @@ const course = {
 const{MyCourse: courseName} = course // Objects destructuring
 console.log(courseName)
 
+/*
+API -> Application Programming Interface, a messenger who transfers data from one place to another
 
-// API -> 
-// JSON -> Javascript Object Notation
-// declaring JSON, it is very similar to object declaration, but here keys are also string
+JSON -> Javascript Object Notation
+declaring JSON, it is very similar to object declaration, but here keys are also string
 {
     "MyCourse:" "JS",
     "price:" "999",
     "instructor:" "SD"
 }
+*/
