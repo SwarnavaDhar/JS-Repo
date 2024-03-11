@@ -51,8 +51,8 @@ const user = {
 
 
 // console.log("***********************************************Objects Part 2**************************************************************")
-// creating objects of objects
 
+// creating objects of objects
 const regularUser = {
     email: "sdk@gmail.com",
     name: {
@@ -87,5 +87,25 @@ users[1].email
 // console.log(Object.keys(regularUser)) // Output => [ 'email', 'name', 'isLoggedIn' ], prints the keys in an array
 // console.log(Object.values(regularUser)) // prints the values in an array
 // console.log(Object.entries(regularUser)) // Prints each key-value pair in a separate array
-console.log(regularUser.hasOwnProperty('isLoggedIn')) // checks whethet a property present or not and gives a bool value based on that
+// console.log(regularUser.hasOwnProperty('isLoggedIn')) // checks whethet a property present or not and gives a bool value based on that
 
+
+// console.log("*********************************************** Objects Part 3 **************************************************************")
+
+const course = {
+    MyCourse: "JS",
+    price: "999",
+    instructor: "SD"
+}
+const{MyCourse: courseName} = course // Objects destructuring
+console.log(courseName)
+
+
+// API -> 
+// JSON -> Javascript Object Notation
+// declaring JSON, it is very similar to object declaration, but here keys are also string
+{
+    "MyCourse:" "JS",
+    "price:" "999",
+    "instructor:" "SD"
+}
